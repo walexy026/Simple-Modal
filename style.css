@@ -36,6 +36,8 @@
     line-height: 2rem;
     color: brown;
     z-index: 10;
+    box-shadow: 0 1rem 1rem 1rem rgba(0.0, 0.0, 0.0, 0.5);
+    width: 70%;
  }
  .btn-close{
     font-size: 2rem;
@@ -46,6 +48,8 @@
     position: absolute;
     right: 3rem;
     top: 10px;
+    font-weight: 700;
+
  }
  .btn-close:hover{
     cursor: pointer;
@@ -55,11 +59,15 @@
     position: absolute;
     top: 0;
     height: 100vh;
-    background-color: #fff;
+    background-color: rgb(14, 230, 32);
     /* z-index: 10; */
     width: 100%;
+   
     /* opacity: 0.5; */
 }
 .overlay:hover{
     cursor: pointer;
+}
+.hidden{
+    display: none;
 }
