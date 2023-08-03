@@ -1,73 +1,98 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- body{
-    background-color: aqua;
- }
- .btn-group{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3rem;
- }
- .open-Modal{
-    background-color: brown;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: none;
-    cursor: pointer;
-    z-index: 100;
- }
- .open-Modal:hover{
-    background-color: #fff;
-    color: brown;
- }
- .modal{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: aliceblue;
-    padding: 3rem;
-    border-radius: 1rem;
-    line-height: 2rem;
-    color: brown;
-    z-index: 10;
-    box-shadow: 0 1rem 1rem 1rem rgba(0.0, 0.0, 0.0, 0.5);
-    width: 70%;
- }
- .btn-close{
-    font-size: 2rem;
-    background-color: none;
-    color: red;
-    border-radius: 1rem;
-    border: none;
-    position: absolute;
-    right: 3rem;
-    top: 10px;
-    font-weight: 700;
+body {
+  background-color: aqua;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+.open-Modal {
+  background-color: brown;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+.open-Modal2 {
+  background-color: rgb(85, 42, 165);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+.open-Modal3 {
+  background-color: rgb(42, 165, 69);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+.open-Modal:hover {
+  background-color: #fff;
+  color: rgb(85, 42, 165);
+}
+.open-Modal2:hover {
+  background-color: #fff;
+  color: brown;
+}
+.open-Modal3:hover {
+  background-color: #fff;
+  color: rgb(42, 165, 69);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  padding: 3rem;
+  border-radius: 1rem;
+  line-height: 2rem;
+  color: brown;
+  z-index: 10;
+  box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  width: 70%;
+}
+.btn-close {
+  font-size: 2rem;
+  background-color: none;
+  color: red;
+  border-radius: 1rem;
+  border: none;
+  position: absolute;
+  right: 3rem;
+  top: 10px;
+  font-weight: 700;
+}
+.btn-close:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  background-color: rgb(14, 230, 32);
+  /* z-index: 10; */
+  width: 100%;
 
- }
- .btn-close:hover{
-    cursor: pointer;
-    background-color: #fff;
- }
-.overlay{
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    background-color: rgb(14, 230, 32);
-    /* z-index: 10; */
-    width: 100%;
-   
-    /* opacity: 0.5; */
+  /* opacity: 0.5; */
 }
-.overlay:hover{
-    cursor: pointer;
+.overlay:hover {
+  cursor: pointer;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }

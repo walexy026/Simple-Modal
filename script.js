@@ -1,4 +1,5 @@
 'use strict';
+// declared the variables
 let openModal = document.querySelectorAll('.open-Modal')
 let modal = document.querySelector('.modal')
 let btnClose = document.querySelector('.btn-close')
@@ -20,3 +21,11 @@ let hideModal = function(){
 
 btnClose.addEventListener('click', hideModal)
 overlay.addEventListener('click', hideModal)
+
+document.addEventListener('keydown', function(e){
+// console.log(e)
+    if (e.key === 'Escape' && !modal.classList.contains('hidden'))
+hideModal()
+    // e.key === hideModal()
+    // console.log("i pressed it")
+})
